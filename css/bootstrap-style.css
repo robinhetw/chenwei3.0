@@ -13,58 +13,76 @@
 .header-nightsky .navbar-nav>li>a {
     color: black;
     font-size: 18px;
-    border-radius: 10px;
+    
 }
 
 .header-nightsky .navbar {
-    margin-bottom: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
     width: 100%;
     border-bottom:none;
-    background-color: transparent;
     min-width: 300px;
-    border: none;
-  
-}
-.header-nightsky .navbar .sticky {
-    margin-bottom: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
-    border-bottom:none;
-    background-color: transparent;
-    min-width: 300px;
-    border: none;
-    background-color: bisque;
-  
+    
+    z-index: 9999;
+    background-color:rgba(255, 203, 4, 1);
 }
 
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover
 
+/*
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color:rgba(255, 203, 4, 1);
+}
+*/
+.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:hover {
+    background-color:rgba(255, 203, 4, 1);
+    
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: white;
+    background-color: rgba(255, 203, 4, 1);
+    
+}
 
 .header-nightsky .navbar-default .navbar-nav>.open>a,
 .header-nightsky .navbar-default .navbar-nav>.open>a:focus,
 .header-nightsky .navbar-default .navbar-nav>.open>a:hover {
     color: white;
-    background-color: transparent;
 }
 
-.header-nightsky .nav>li>a:focus,
-.header-nightsky .nav>li>a:hover {
-    color: white;
-    background-color: transparent;
+.header-nightsky .nav>li>a:focus::after,
+.header-nightsky .nav>li>a:hover::after {
+    /*color: white;
+    border-bottom: 1px solid #e67e22;*/
+    
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 50px;
+    margin: 0 auto;
+    margin-top: 5px;
+
 }
+
+
 
 .header-nightsky .navbar-nav>li {
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
 .header-nightsky .navbar-nav {
-   margin-top: 12px;
+   margin-top: 5px;
 }
 
 .header-nightsky .navbar-toggle {
-    background-color: transparent !important;
+   /* background-color: transparent !important;*/
     margin-top: 20px;
     border: 1px solid black;
 }
@@ -75,7 +93,9 @@
 
 .header-nightsky .navbar-brand {
     color:black;
-    font-size: 50px;
+    font-size: 30px;
+    font-weight: bold;
+
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -88,6 +108,7 @@
     text-align: center;
     margin-top: 80px;
     margin-bottom: 100px;
+    padding-top: 40px;
 }
 
 .header-nightsky .hero h1 {
@@ -95,6 +116,7 @@
     font-weight: bold;
     font-size: 60px;
     margin-bottom: 36px;
+
 }
 
 
@@ -133,6 +155,7 @@
     .header-nightsky .navbar-default .navbar-nav .open .dropdown-menu>li>a{
         color: #fff;
         font-size: 16px;
+        
     }
 
     .header-nightsky .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{
@@ -148,14 +171,45 @@
     .header-nightsky .hero{
         margin-top: 40px;
         margin-bottom: 40px;
+        padding-top: 20%;
     }
 
     .header-nightsky .hero h1{
         font-size: 42px;
     }
+
+    .header-nightsky .btn-primary {
+        color: black;
+        background-color: transparent;
+        border-color: black !important;
+        outline:none;
+        margin-right: 20px;
+        margin-top: 15px;
+        font-size: 16px;
+        padding: 15px 21px;
+        transition:0.2s background-color;
+    }
+
+    .header-nightsky .nav>li>a:focus::after,
+    .header-nightsky .nav>li>a:hover::after{
+    /*color: white;
+    border-bottom: 1px solid #e67e22;*/
+    
+    color: white;
+    background-color: #ffcb04;
+    
+    
+    
+    
+ 
+    
+    
+   
+    }
+
 }
 
-/*button*/
+
 
 /*skill buttons*/
 #js-certificate .btn-design,
