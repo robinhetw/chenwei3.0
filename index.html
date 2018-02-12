@@ -13,7 +13,7 @@
    <!-- <script src="js/jquery.waypoints.min.js"></script>-->
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     
-
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
 
     <link rel="stylesheet" href="css/ionicons.min.css">
@@ -30,7 +30,7 @@
 <body>
 
     <div class="header-nightsky">
-        <nav class="navbar navbar-default ">
+        <nav class="navbar navbar-default navbar-fixed-top  ">
             <div class="container">
                 <a class="navbar-brand" href="#">CHEN WEI</a>
                 <div class="navbar-header">
@@ -69,9 +69,9 @@
         <div class="hero">
             <h1>HELLO & WELCOME</h1>
             <p>MY PORTFOLIO</p>
-            <a href="#" class="js--scroll-to-about"> <div class="btn btn-primary ">
+            <a href="#" class="js--scroll-to-about"> <div class="btn btn-primary btn-small ">
                 <i class="ion-ios-arrow-down"></i>Who am I?</div></a>
-                <a href="#" class="js--scroll-to-project"><div class="btn btn-primary"> 
+                <a href="#" class="js--scroll-to-project"><div class="btn btn-primary btn-small"> 
                 <i class="ion-ios-arrow-down"></i>What are my projects?</div></a> 
         </div>
     </div>
@@ -79,7 +79,7 @@
     <section class="about-me js--section-about" id="js-about-me">
         <div class="container">
             <h2>About Chen Wei</h2>
-            <div class="row">
+            <div class="row showcase-me">
                 <div class="col-lg-6">
                     <iframe width="100%" height="315" src="https://www.youtube.com/embed/xWFgwXPqUzk?rel=0" frameborder="0" allowfullscreen></iframe>
                 </div>
@@ -103,7 +103,7 @@
 
     <section class="about-me-2">
         <div class="container">
-            <div class="row">
+            <div class="row jq-about-me-2">
                 <div class="col-lg-3">
                     <i class="ion-ios-analytics-outline icon-big"></i>
                     <h3>OUTDOOR ACTIVITIES</h3>
@@ -177,7 +177,7 @@
 
                 </div>
 
-                <div class="col-md-5">
+                <div class="col-md-5 jq-license-img">
                     <img class="img-responsive center-block" src="img/udemy (1).jpg" alt="certificate">
 
 
@@ -226,7 +226,7 @@
                     </p>
 
                 </div>
-                <div class="col-md-5 col-md-pull-7">
+                <div class="col-md-5 col-md-pull-7 jq-license-img-2">
                     <img class="img-responsive center-block" src="img/udemy (2).jpg" alt="certificate">
 
 
@@ -242,7 +242,7 @@
     <section class="section-reference" id="js-reference">
         <div class="container">
             <h2>MY REFERENCES</h2>
-            <div class="row">
+            <div class="row jq-references">
                 <div class="col-md-4">
                     <img class="img-circle" src="img/ericmu.jpg" alt="Eric Mu " width="90" height="90">
                     <h3>Eric Mu</h3>
@@ -437,7 +437,7 @@
                 </article>
 
                 <article class="white-panel filter photography">
-                    <img src="img/6.JPG" alt="photo">
+                    <img src="img/6.jpg" alt="photo">
                     <h4>Rock Canyon</h4>
                     <p>Photo by Chen Wei in 2017</p>
                     <br>
@@ -512,9 +512,51 @@
 
     <script src="js/bootstrap.min.js"></script>
     
-   
-    <script src="js/style.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
+    <script src="js/style.js"></script>
+<script>
+    
+    window.sr = ScrollReveal();
+    sr.reveal('.about-me', {
+      duration: 2000,
+      origin:'right',
+      distance:'300px',
+      viewFactor: 0.6
+    });
+    sr.reveal('.hero', {
+      duration: 2000,
+      origin:'left',
+      distance:'300px'
+    });
+    sr.reveal('.jq-about-me-2', {
+      duration: 2000,
+      origin:'left',
+      distance:'300px',
+      viewFactor: 0.3
+    });
+    sr.reveal('.jq-license-img', {
+      duration: 2000,
+      origin:'right',
+      distance:'300px',
+      viewFactor: 0.3
+    });
+    sr.reveal('.jq-license-img-2', {
+      duration: 2000,
+      origin:'left',
+      distance:'300px',
+      viewFactor: 0.3
+    });
+    sr.reveal('.jq-references', {
+      duration: 2000,
+      origin:'bottom',
+      distance:'300px',
+      viewFactor: 0.3
+    });
+
+    
+    
+</script>
 
 
 </body>
