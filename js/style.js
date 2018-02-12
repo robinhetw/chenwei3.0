@@ -1,32 +1,5 @@
-/*
-$(document).ready(function(){
-
-    $('.js--section-features').waypoint(function(direction) {
-        if (direction == "down") {
-            $('navbar').addClass('navbar-fixed-top');
-        } else {
-            $('navbar').removeClass('navbar-fixed-top');
-        }
-    }, {
-      offset: '60px;'
-    });
-
-};
-*/
 
 
-
-/*Nav*/ 
-/*
-$(function(){
-    $('.navbar').affix({
-      offset: {
-        
-        top: $("#js-about-me").outerHeight(true)}
-    });
-});
-
-/*
 /*scroll*/ 
 $(document).ready(function(){
 /* scroll button*/
@@ -276,3 +249,12 @@ $(document).ready(function() {
   })(jQuery, window, document);
 
   
+
+/*cover h1*/ 
+function resize() {
+    var n = $("body").width() / 18 + "pt";
+    $("h1").css('fontSize', n);
+}
+$(window).on("resize", resize);
+$(document).ready(resize);
+
